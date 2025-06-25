@@ -2,6 +2,11 @@
 export default defineNuxtConfig({
   devtools: { enabled: true },
   
+  // Configuración de compatibilidad para despliegue
+  nitro: {
+    preset: 'node-server'
+  },
+  
   // Módulos
   modules: [
     '@nuxtjs/tailwindcss',
